@@ -41,3 +41,9 @@
     --background-color: #fff1f7;
   }
 }
+
+/* Правила для auto-темы */
+:root.theme-auto {
+  /* По умолчанию – для светлой системы */
+  --button-focus-color: #353430;
+}

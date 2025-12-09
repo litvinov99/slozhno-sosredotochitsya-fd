@@ -35,4 +35,8 @@
     --button-hover-color: var(--accent-color-transparent);
     --decorative-element-display: block;
   }
+
+  :root.theme-auto {
+    --button-focus-color: #ff0070;
+  }
 }

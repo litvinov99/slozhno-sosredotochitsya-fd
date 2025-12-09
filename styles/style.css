@@ -8,7 +8,6 @@
   background-size: cover;
   background-attachment: fixed;
   color: var(--text-color);
-  overflow-x: hidden; /* Предотвращение горизонтальной прокрутки */
   scroll-behavior: smooth; /* Плавная прокрутка */
 }
 
@@ -536,18 +535,6 @@
 @media (min-width: 768px) and (max-width: 1019px) and (max-height: 668px) {
   .header__theme-menu {
     margin-block-start: 50px; /* Увеличиваем отступ сверху */
-  }
-}
-
-/* Правила для auto-темы */
-:root.theme-auto {
-  /* По умолчанию – для светлой системы */
-  --button-focus-color: #353430;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root.theme-auto {
-    --button-focus-color: #ff0070;
   }
 }
 
