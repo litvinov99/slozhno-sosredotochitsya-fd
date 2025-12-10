@@ -529,14 +529,17 @@
   .header__theme-menu {
     position: relative;
     z-index: 1;
+    margin-block-start: 50px;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1019px) and (max-height: 668px) {
-  .header__theme-menu {
-    margin-block-start: 50px; /* Увеличиваем отступ сверху */
+  /* Для всех экранов с высотой 668px и меньше */
+  @media (max-height: 668px) {
+    .header__decorative {
+      inset-block-start: 20px;
+      inset-inline-end: 48px;
+    }
   }
-}
 
 /* Стиль для изображений с ошибкой загрузки */
 .image-error {
